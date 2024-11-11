@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Made Fun</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+<header class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+    <div class="logo">
+        <img src="Cook4Us Maroon.png" alt="Cook 4 Us Logo" class="img-fluid" style="height: 40px;">
+    </div>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-white" href="HomePage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="ProfilePage.html">Profile</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="AboutUsPage.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Top Users</a></li>
+        </ul>
+    </nav>
+    <div class="d-flex align-items-center">
+        <div class="input-group me-3">
+            <input type="text" class="form-control" placeholder="Search recipes">
+            <button class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+        </div>
+        <button class="btn btn-danger" id="logout-btn">Log Out</button>
+    </div>
+</header>
+
+<main class="container my-5">
+    <section class="row mb-5">
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold">Cooking Made Fun and Easy: Unleash Your Inner Chef</h1>
+            <p>Explore various dishes and cuisines to expand your knowledge and skills in cooking.</p>
+            <button class="btn btn-danger btn-lg">VIEW MORE RECIPES</button>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <img src="pngwing.com.png" alt="Burger" class="img-fluid">
+            <div class="chef-card bg-white rounded shadow-sm p-3 text-center position-absolute">
+                <img src="gordon.jpg" alt="Chef Image" class="rounded-circle mb-2" style="height: 130px; width: 130px;">
+                <p class="fw-bold">Chef Ramsay</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-recipes mb-5 text-center">
+        <h2 class="display-6 fw-bold">Trending Recipes</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="big-tasty-burger.png" class="card-img-top" alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Burger</h5>
+                        <p class="card-text">A delicious burger with homemade sauce and grilled to perfection.</p>
+                        <button class="btn btn-danger">VIEW RECIPE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pngegg (1).png" class="card-img-top" alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Exotic Pasta</h5>
+                        <p class="card-text">Indulge in this creamy pasta with a mix of herbs and spices.</p>
+                        <button class="btn btn-danger">VIEW RECIPE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="turkey.png" class="card-img-top" alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Chicken</h5>
+                        <p class="card-text">Succulent chicken grilled with flavorful spices for a delightful meal.</p>
+                        <button class="btn btn-danger">VIEW RECIPE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipe-categories mb-5 text-center">
+        <h2 class="display-6 fw-bold">Explore Recipe Categories</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <a href="vegan.html" class="text-decoration-none text-dark">
+                    <div class="category-item bg-light p-3 rounded shadow-sm text-center">
+                        <img src="vegan.png" alt="Vegan" class="img-fluid mb-2">
+                        <h5>Vegan</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="deserts.html" class="text-decoration-none text-dark">
+                    <div class="category-item bg-light p-3 rounded shadow-sm text-center">
+                        <img src="deserts.png" alt="Desserts" class="img-fluid mb-2">
+                        <h5>Desserts</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="maincourse.html" class="text-decoration-none text-dark">
+                    <div class="category-item bg-light p-3 rounded shadow-sm text-center">
+                        <img src="maincourse.png" alt="Main Courses" class="img-fluid mb-2">
+                        <h5>Main Courses</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="appetizers.html" class="text-decoration-none text-dark">
+                    <div class="category-item bg-light p-3 rounded shadow-sm text-center">
+                        <img src="appetizers.png" alt="Appetizers" class="img-fluid mb-2">
+                        <h5>Appetizers</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials text-center mb-5">
+        <h2 class="display-6 fw-bold">What Our Users Say</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="testimonial-item p-4 bg-light rounded shadow-sm mb-3">
+                    <p>"This platform has transformed my cooking. I learned so many new recipes!"</p>
+                    <p><strong>- Emily, Home Cook</strong></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial-item p-4 bg-light rounded shadow-sm mb-3">
+                    <p>"As a professional chef, I find this platform a great resource to connect with fellow chefs."</p>
+                    <p><strong>- Chef Mark</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Cooking Made Fun. All Rights Reserved.</p>
+    <div class="d-flex justify-content-center">
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="homepage.js"></script>
+</body>
+</html>

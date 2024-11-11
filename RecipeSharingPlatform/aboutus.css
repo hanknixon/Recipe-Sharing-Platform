@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #3e5531;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background-color: #D9414D;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.about-us .hero-background {
+    background-image: url('cookingback.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.about-us .hero-background h1 {
+    font-size: 3rem;
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.history, .mission, .contact {
+    background-color: #F4F4F4;
+    padding: 3rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.contact-card img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #455A2B;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}

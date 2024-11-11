@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Made Fun - Vegan Delights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .search-and-logout {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .vegan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .vegan-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .vegan-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .vegan-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .vegan-item:hover img {
+            transform: scale(1.1);
+        }
+        .vegan-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .vegan-item:hover .vegan-info {
+            transform: translateY(0);
+        }
+        .vegan-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        .vegan-info p {
+            margin: 0;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .search-and-logout {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .search-bar {
+                flex-grow: 1;
+            }
+            .search-bar input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="HomePage.html">Home</a>
+                <a href="ProfilePage.html">Profile</a>
+                <a href="AboutUsPage.html">About Us</a>
+                <a href="#">Top Users</a>
+            </div>
+            <div class="search-and-logout">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search recipes">
+                    <button>Search</button>
+                </div>
+                <button class="logout-btn">Log Out</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Heavenly Desserts</h1>
+        <div class="vegan-grid">
+            <div class="vegan-item">
+                <img src="brownies.jpg" alt="Brownies">
+                <div class="vegan-info">
+                    <h3>Brownies</h3>
+                    <p>Made by Chef Sarah Green</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="cremebrulee.jpg" alt="Crème Brûlée">
+                <div class="vegan-info">
+                    <h3>Crème Brûlée</h3>
+                    <p>Made by Chef Michael Plant</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="gulabjam.jpg" alt="Gulab Jamun">
+                <div class="vegan-info">
+                    <h3>Gulab Jamun</h3>
+                    <p>Made by Chef Priya Sharma</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="japcheese.jpg" alt="Japanese Cheesecake">
+                <div class="vegan-info">
+                    <h3>Japanese Cheesecake</h3>
+                    <p>Made by Chef Tom Rivers</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="Knafeh.jpg" alt="Knafeh">
+                <div class="vegan-info">
+                    <h3>Knafeh</h3>
+                    <p>Made by Chef Emma Woods</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="lemontart.jpg" alt="Lemon Tart">
+                <div class="vegan-info">
+                    <h3>Lemon Tart</h3>
+                    <p>Made by Chef Alex Kumar</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="M’hanncha.webp" alt="M’hanncha">
+                <div class="vegan-info">
+                    <h3>M’hanncha</h3>
+                    <p>Made by Chef Maria Rodriguez</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="Medovik.webp" alt="Medovik">
+                <div class="vegan-info">
+                    <h3>Medovik</h3>
+                    <p>Made by Chef Yuki Tanaka</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="SesameBalls.webp" alt="Sesame Balls">
+                <div class="vegan-info">
+                    <h3>Sesame Balls</h3>
+                    <p>Made by Chef Zain Abbas</p>
+                </div>
+            </div>
+            <div class="vegan-item">
+                <img src="Tiramisú.webp" alt="Tiramisú">
+                <div class="vegan-info">
+                    <h3>Tiramisú</h3>
+                    <p>Made by Chef Lisa Martinez</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

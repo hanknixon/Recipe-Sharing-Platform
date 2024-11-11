@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    background-image: url('editpagebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #3e5531;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .logo {
+    flex-shrink: 0;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .nav-links {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.logout-container {
+    flex-shrink: 0;
+}
+
+.logout-btn {
+    background-color: #D9414D;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.edit-container {
+    background-color: rgba(139, 0, 0, 0.8);
+    color: white;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.edit-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+label {
+    font-weight: 600;
+    color: white;
+}
+
+input[type="text"],
+textarea {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="addrecipe.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Cook4Us Maroon.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="ProfilePage.html">Profile</a></li>
+        <li><a href="AboutUsPage.html">About Us</a></li>
+        <li><a href="#">Top Users</a></li>
+      </ul>
+      <button class="logout-btn" id="logout-btn">Log Out</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="recipe-form-section">
+      <h1>Add a Recipe</h1>
+      <form id="recipeForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="Enter the title of recipe">
+        </div>
+
+        <div class="form-group">
+          <label for="image">Upload Image (optional)</label>
+          <input type="file" id="image">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Enter a description of the dish"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="ingredients">Ingredients</label>
+          <textarea id="ingredients" placeholder="Enter the ingredients required"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="instructions">Instructions/Methods</label>
+          <textarea id="instructions" placeholder="Enter required instructions or methods"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="prep-time">Prep/Cooking Time</label>
+          <input type="text" id="prep-time" placeholder="Enter Preparation/Cooking time">
+        </div>
+
+        <div class="form-group">
+          <label for="extras">Extras</label>
+          <input type="text" id="extras" placeholder="Enter extras like cuisine type, nutritional info, etc.">
+        </div>
+
+        <div class="form-group">
+          <label for="special-note">Special Note</label>
+          <input type="text" id="special-note" placeholder="Enter a special note if needed">
+        </div>
+
+        <button type="submit" id="submitBtn">Add New Dish</button>
+      </form>
+    </section>
+  </main>
+  <script src="addrecipe.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

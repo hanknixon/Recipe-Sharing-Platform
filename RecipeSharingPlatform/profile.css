@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; 
+    color: #333;
+    overflow-x: hidden; 
+}
+
+.background-container {
+    background-image: url('pexels-ella-olsson-572949-1640773.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    height: 100vh; 
+}
+
+.background-container::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 1; 
+}
+
+.header, .profile-container {
+    position: relative; 
+    z-index: 2; 
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #3e5531; 
+
+    position: relative; 
+    z-index: 2;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    margin-left: 20px;
+    background-color: #D9414D;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+    background-color: #c0373f;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    width: 80%;
+}
+
+.profile-info {
+    background-color: #d94141;
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    width: 450px; 
+    min-height: 450px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.profile-info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.profile-info p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#show-password {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.update-btn {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #d94141;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.update-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.recipe-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px; 
+}
+
+.action-btn {
+    background-color: #c92828;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn:hover {
+    background-color: #a91f1f;
+}
+
+.action-btn.view-btn {
+    background-color: #5f8b41;
+}
+
+.action-btn.view-btn:hover {
+    background-color: #4e7536;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .action-btn.view-btn {
+    background-color: #4e7536;
+}
+
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
+
+
+.update-btn, .save-btn, .cancel-btn {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #d94141;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.save-btn, .cancel-btn {
+    display: none; 
+}
