@@ -1,0 +1,29 @@
+Name the Database as Cook4UsDB
+
+There consists of two collections named
+
+users :
+
+{ 
+	id: ---
+	name: ---
+	birthdate: ---
+	gender: ---
+	email: ---
+	password: ---
+}
+
+dishes:
+	
+{
+	id:
+	title:
+	userId:
+	image:
+	description:
+	ingredients: "array"
+	instructions: "array"
+	prepTime: 
+	extras: "array"
+	specialNote:
+}
